@@ -74,7 +74,7 @@ async function getCity1(event) {
 
     const iCity = input.value.trim().toLowerCase();
 
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${iCity}&appid=bedf7e4daf9c1767ed280a96c05ef68f`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${iCity}&appid=bedf7e4daf9c1767ed280a96c05ef68f`);
 
     
     if(response.ok)
@@ -95,7 +95,7 @@ async function getCity1(event) {
 async function getCity2() {
 
 
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=stockton&appid=bedf7e4daf9c1767ed280a96c05ef68f`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=stockton&appid=bedf7e4daf9c1767ed280a96c05ef68f`);
 
     const user = await response.json();
 
