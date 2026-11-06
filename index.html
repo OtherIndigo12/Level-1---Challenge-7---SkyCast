@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[url(/assets/background.png)] bg-fixed bg-cover bg-center bg-no-repeat h-screen w-full">
+    <header>
+        
+    </header>
+
+    <main class="text-white font-inter font-bold">
+       
+        <div class="bg-black/50 rounded-xl p-5 ml-25 mr-25 mt-10">
+             <h1 class="font-inter font-bold text-cyan-300 md:text-4xl sm:text-2xl text-center mb-4">SkyCast Weather</h1>
+            <div class="bg-blue-800 rounded-xl p-3">
+                <div id="forecast" class="grid md:grid-cols-5 sm:grid-cols-1 justify-items-center mx-auto text-2xl mt-2 md:text-2xl sm:text-xl font-inter">
+                    <div class="mb-3 text-center">
+                        <h2 id="d1">Date</h2>
+                        <img id="img1" src="/assets/placeholder.jpg" class="w-25 h-25"> 
+                        <p id="s1">Status</p>
+                        <p id="temp1" class="">temp</p>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <h2 id="d2">Date</h2>
+                        <img id="img2" src="/assets/placeholder.jpg" class="w-25 h-25">
+                        <p id="s2">Status</p>
+                        <p id="temp2" class="">temp</p>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <h2 id="d3">Date</h2>
+                        <img id="img3" src="/assets/placeholder.jpg" class="w-25 h-25">
+                        <p id="s3">Status</p>
+                        <p id="temp3" class="">temp</p>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <h2 id="d4">Date</h2>
+                        <img id="img4" src="/assets/placeholder.jpg" class="w-25 h-25">
+                        <p id="s4">Status</p>
+                        <p id="temp4" class="">temp</p>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <h2 id="d5">Date</h2>
+                        <img id="img5" src="/assets/placeholder.jpg" class="w-25 h-25">
+                        <p id="s5">Status</p>
+                        <p id="temp5" class="">temp</p>
+                    </div>
+                </div>
+                <p class="text-center text-xl mt-2 text-cyan-300">Five Day Forecast</p>
+            </div>
+
+            <div class="flex justify-center mt-5 items-center">
+                <form id="form" class="font-inter">
+                    <label class="text-cyan-300">Enter City Here:</label>
+                    <input id="input" type="text" placeholder="Enter City Name here..." class="bg-white border-5 rounded-xl border-blue-800 text-black text-sm m-3 p-1">
+                    <button id="button" type="submit" class="bg-purple-600 mr-5 p-1 rounded-xl">Search!</button>
+                </form>
+            </div>
+            <p id="loading" class="flex justify-center font-inter"></p>
+            <p></p>
+            <div class="flex justify-end mt-3 items-center">
+               
+            </div>
+
+            <div class="flex items-center justify-center font-inter">
+                <div class="flex flex-col  md:flex-row items-center justify-center gap-3 bg-blue-800 rounded-xl w-fit p-5">
+                    <div class="bg-blue-800 rounded-xl w-fit p-5 text-center">
+                        <p id="cWeather" class=" text-cyan-300 md:text-4xl sm:text-3xl">Current Weather</p>
+                        <p id="city" class="md:text-xl sm:text-sm">Placeholder:</p>
+                        <p id="temp" class=" md:text-5xl sm:text-4xl text-center">76</p>
+                        <div class="flex items-center justify-center gap-3">
+                            <img id ="wIcon" src="" class="w-10 h-10" alt="Current Weather">
+                            <p id="desc" class="mt-2">Cloudy</p>
+                        </div>
+                        <p id="min/max" class="">current temp</p>
+                        <p id="fl" class="md:text-xl sm:text-sm">feels like</p>
+                        <p id="ws" class="md:text-xl sm:text-sm">Wind Speed</p>
+                        <p id="hum" class="md:text-xl sm:text-sm">Humidity</p>
+                    </div>
+
+                    <div class="bg-blue-800 rounded-xl w-fit p-5">
+                        <p id="cWeather" class="text-center text-cyan-300 md:text-4xl sm:text-3xl">Current Time</p>
+                        <p id="city2" class="text-center md:text-xl sm:text-sm">Placeholder:</p>
+                        <p id="time" class=" md:text-5xl sm:text-4xl text-center">Time</p>
+                        <p id="date" class="text-center md:text-xl sm:text-sm">Date</p>
+                        <p id="sun" class="text-center md:text-xl sm:text-sm">Sunrise | Sunset</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/js/scripts.js"></script>
+</body>
+</html>
